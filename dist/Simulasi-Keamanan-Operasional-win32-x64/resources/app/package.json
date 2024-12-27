@@ -1,0 +1,13 @@
+{
+  "name": "Simulasi-Keamanan-Operasional",
+  "version": "1.0.0",
+  "description": "Aplikasi sederhana untuk simulasi keamanan operasional sebuah industri.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.2.0",
+    "electron-packager": "^17.1.2"
+  }
+}

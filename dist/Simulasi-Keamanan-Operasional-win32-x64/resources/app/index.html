@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Keamanan Operasional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulasi Keamanan Operasional</h1>
+        <p>Pilih skenario untuk memulai simulasi.</p>
+
+        <div class="selector">
+            <label for="scenario-select" class="selector-label">Pilih Skenario:</label>
+            <div class="custom-select">
+                <select id="scenario-select" onchange="loadScenario()">
+                    <option value="" disabled selected>Pilih...</option>
+                    <option value="oil_spill">Kebocoran Minyak</option>
+                    <option value="explosion">Ledakan</option>
+                    <option value="fire">Kebakaran</option>
+                    <option value="flood">Banjir</option>
+                    <option value="earthquake">Gempa Bumi</option>
+                    <option value="chemical_leak">Kebocoran Bahan Kimia</option>
+                    <option value="cyber_attack">Serangan Siber</option>
+                    <option value="gas_leak">Kebocoran Gas</option>
+                    <option value="power_outage">Pemadaman Listrik</option>
+                    <option value="storm">Badai</option>
+                    <option value="terror_attack">Serangan Teroris</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="actions" class="scenario hidden">
+            <h2 id="scenario-title">Skenario</h2>
+            <div id="buttons"></div>
+        </div>
+
+        <div id="result" class="result">
+            <h3>Hasil :</h3>
+            <p id="result-text">Pilih skenario untuk melihat hasilnya.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
